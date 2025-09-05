@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS Users(
+	id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+	username VARCHAR(25) NOT NULL,
+	password VARCHAR(60) NOT NULL,
+	role VARCHAR(10) NOT NULL
+);
